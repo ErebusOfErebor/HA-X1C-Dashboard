@@ -1,0 +1,46 @@
+- sensor:
+    - name: x1c_ams_temperature_and_humidity_temperature_celcius
+      unit_of_measurement: "°C"
+      state: "{{ ((states('sensor.x1c_ams_temperature_and_humidity_temperature') | float - 32) * 5 / 9) | round }}"
+    - name: x1c_3d_printer_nozzle_is_heating_up
+      state: >
+        {% if states('sensor.x1c_3d_printer_nozzle_temperature') | int < (states('sensor.x1c_3d_printer_nozzle_target_temperature') | int - 1)  %}
+          true
+        {% else %}
+          false
+        {% endif %}
+    - name: x1c_3d_printer_nozzle_is_cooling_down
+      state: >
+        {% if (states('sensor.x1c_3d_printer_nozzle_temperature') | int - 3 > states('sensor.x1c_3d_printer_nozzle_target_temperature') | int) and states('sensor.x1c_3d_printer_nozzle_target_temperature') | int != 0 %}
+          true
+        {% else %}
+          false
+        {% endif %}
+    - name: x1c_3d_printer_bed_is_heating_up
+      state: >
+        {% if states('sensor.x1c_3d_printer_bed_temperature') | int < (states('sensor.x1c_3d_printer_bed_target_temperature') | int - 1)  %}
+          true
+        {% else %}
+          false
+        {% endif %}
+    - name: x1c_3d_printer_bed_is_cooling_down
+      state: >
+        {% if (states('sensor.x1c_3d_printer_bed_temperature') | int - 1 > states('sensor.x1c_3d_printer_bed_target_temperature') | int) and states('sensor.x1c_3d_printer_bed_target_temperature') | int != 0 %}
+          true
+        {% else %}
+          false
+        {% endif %}
+    - name: x1c_3d_printer_chamber_is_heating_up
+      state: >
+        {% if states('sensor.x1c_3d_printer_chamber_temperature') | int < (states('sensor.x1c_3d_printer_chamber_target_temperature') | int - 1)  %}
+          true
+        {% else %}
+          false
+        {% endif %}
+    - name: x1c_3d_printer_chamber_is_cooling_down
+      state: >
+        {% if (states('sensor.x1c_3d_printer_bedx1c_3d_printer_chamber_temperature_temperature') | int - 1 > states('sensor.x1c_3d_printer_chamber_target_temperature') | int) and states('sensor.x1c_3d_printer_bed_target_temperature') | int != 0 %}
+          true
+        {% else %}
+          false
+        {% endif %}
