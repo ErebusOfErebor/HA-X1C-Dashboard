@@ -10,6 +10,7 @@ I made this dashboard specifically for my use case, which is an X1C with one AMS
 
 HACS
 * Bubble Card
+* Mushroom
 * hui-element
 * button-card
 * layout-card
