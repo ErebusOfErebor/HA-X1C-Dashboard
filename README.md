@@ -22,6 +22,8 @@ HACS
 
 A few custom images that Wolf has supplied. The humidity-level icons can be found [here](https://github.com/WolfwithSword/Bambu-HomeAssistant-Flows/tree/main/files/media/custom_icons), and the image for your specific printer found [here](https://github.com/WolfwithSword/Bambu-HomeAssistant-Flows/tree/main/files/media/www/media/bambuprinter). Thanks to Wolf again for making these easy for me to get.
 
+An Input Boolean named "3D Printer End Time Switch". Mine has the entity id `input_boolean.3d_printer_end_time_switch`. This is used to switch the display value of the End Time between absolute (e.g. 18:30) and relative (e.g. 1h36m)
+
 ## Additional Notes/Info
 I have an Aqara Temp & Humidity sensor inside my AMS unit in the back, which is how I'm getting the actual Temperature and Humidity % in the dashboard. I'm using [this](https://makerworld.com/en/models/687462?from=search#profileId-616147) holder by [Piitaya](https://makerworld.com/en/@Piitaya).
 
