@@ -16,6 +16,7 @@ HACS
 * layout-card
 * custom-brand-icons
 * webrtc-camera
+* card-mod
 
 
 [Bambu NodeRed Integration](https://github.com/WolfwithSword/Bambu-HomeAssistant-Flows/tree/main) by [WolfWithSword](https://www.wolfwithsword.com). This may work with the HACS Integration, but I do not use that and have not tested this dashboard with it.
