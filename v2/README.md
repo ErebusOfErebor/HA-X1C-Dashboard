@@ -7,6 +7,18 @@
 4. Dropped usage of `webrtc-camera` and `bar-card`
 
 
+I've also made some parts user-customizeable.
+Within the AMS cards there are two variables: `low_filament_threshold` and `has_secondary_temp_and_hum_sensor`.
+
+
+#### low_filament_threshold
+The percentage remaining of your spool at which a red pulsing animation will trigger, indicating the filament is low.
+
+#### has_secondary_temp_and_hum_sensor
+I have an Aqara Temp & Humidity sensor in my AMS unit.
+If you have something similar, you can set this to true and change the entities to whatever your external sensors are and use those values next to the humidity icon.
+If you do not have any external temp and humidity sensors, change this to `false` and it will use the temperature sensor provided from the NodeRed flow and will only use the icon for the humidity, without a separate reading.
+
 <table>
     <tbody>
         <tr>
