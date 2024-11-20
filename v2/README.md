@@ -7,6 +7,15 @@
 4. Dropped usage of `webrtc-camera`
 
 
-![Dashboard](https://github.com/ErebusOfErebor/HA-X1C-Dashboard/blob/main/dashboard_images/v2_dashboard.jpeg?raw=true)
-
-![AMS v2 Popup](https://github.com/ErebusOfErebor/HA-X1C-Dashboard/blob/main/dashboard_images/v2_dashboard.jpeg?raw=true)
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="https://github.com/ErebusOfErebor/HA-X1C-Dashboard/blob/main/dashboard_images/v2_dashboard.jpeg?raw=true">
+            </td>
+            <td>
+                <img src="https://github.com/ErebusOfErebor/HA-X1C-Dashboard/blob/main/dashboard_images/v2_ams_popup.jpeg?raw=true">
+            </td>
+        </tr>
+    </tbody>
+</table>
