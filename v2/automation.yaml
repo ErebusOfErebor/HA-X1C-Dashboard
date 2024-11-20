@@ -1,0 +1,15 @@
+alias: 3D Printer - Toggle Time Display
+description: ""
+mode: single
+triggers:
+  - seconds: /5
+    trigger: time_pattern
+conditions:
+  - condition: state
+    entity_id: sensor.x1c_3d_printer_stage
+    state: Printing
+actions:
+  - target:
+      entity_id: input_boolean.3d_printer_end_time_switch
+    data: {}
+    action: input_boolean.toggle
